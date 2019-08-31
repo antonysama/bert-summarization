@@ -3,3 +3,21 @@
 # It is usually caused by they referenced class not being at the referenced location, or on the same layer of the project file.
 # Solved by adding "/home/antony/environments/n/" into this:
   export CLASSPATH=/home/antony/environments/n/stanford-corenlp-full-2018-10-05/stanford-corenlp-3.9.2.jar
+
+# "Installation version issues: mkl-fft..."
+pip install/
+    numpy \
+    scipy \
+    pandas \
+pvlib==0.6.0 \
+    cloudpickle \
+pickleshare \
+    scikit-learn==0.20.0 \
+python-dateutil==2.7.5 \
+    matplotlib \
+PyMySQL==0.9.2 \
+mkl-fft \
+mkl-random \
+windrose==1.6.5 \
+    Cython \
+tables==3.4.4 \
