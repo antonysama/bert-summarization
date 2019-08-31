@@ -1,0 +1,5 @@
+# "java.lang.ClassNotFoundException "
+# It means that a class is being referenced but not found. 
+# It is usually caused by they referenced class not being at the referenced location, or on the same layer of the project file.
+# Solved by adding "/home/antony/environments/n/" into this:
+  export CLASSPATH=/home/antony/environments/n/stanford-corenlp-full-2018-10-05/stanford-corenlp-3.9.2.jar
