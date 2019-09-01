@@ -5,7 +5,7 @@
   export CLASSPATH=/home/antony/environments/n/stanford-corenlp-full-2018-10-05/stanford-corenlp-3.9.2.jar
 
 # "Installation version issues: mkl-fft..."
-pip install/
+pip install\
     numpy \
     scipy \
     pandas \
@@ -21,3 +21,4 @@ mkl-random \
 windrose==1.6.5 \
     Cython \
 tables==3.4.4 \
+pyrouge==0.1.3 \
