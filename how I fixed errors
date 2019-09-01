@@ -23,4 +23,5 @@ windrose==1.6.5 \
 tables==3.4.4 \
 pyrouge==0.1.3 \
 
+tensorflow empty filelist path/to/train_*
 https://github.com/abisee/pointer-generator/issues/77
