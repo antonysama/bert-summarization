@@ -19,7 +19,10 @@
   --data_path=/home/antony/environments/n/cnn-dailymail/finished_files/chunked/val_* 
   --vocab_path=/home/antony/environments/n/cnn-dailymail/finished_files/vocab 
   --log_root=/home/antony/environments/n/cnn-dailymail/abstracter_model/ 
-  --exp_name=abstracter_model --max_enc_steps=8 --max_dec_steps=4 --coverage=1
+  --exp_name=abstracter_model 
+  --max_enc_steps=8 
+  --max_dec_steps=4 
+  --coverage=1
 
 # If you want to get the results of the pretrained models, set two arguments in the scripts:  
 # set the MODE to evalall (i.e., MODE='evalall'). 
