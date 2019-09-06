@@ -1,8 +1,9 @@
 # 1. conda activate o
 # 2. pip install tensorflow-gpu &  run python.gpu.py
 # For expediency I reduced these down by 1/50--max_enc_steps=400 --max_dec_steps=120...NEXT TIME reduce epoch size , too.
-# Run the following
+# Run A or B
 
+#A
 #python pointer-generator-master/run_summarization.py\
   --mode=decode --data_path=/path/to/your/finished_test_files/chunked/test_* 
   --vocab_path=vocab 
@@ -14,7 +15,8 @@
   --max_dec_steps=200 
   --min_dec_steps=100
   
-  python run_summarization.py\
+#B  
+python run_summarization.py\
   --mode=train 
   --data_path=/home/antony/environments/n/cnn-dailymail/finished_files/chunked/val_* 
   --vocab_path=/home/antony/environments/n/cnn-dailymail/finished_files/vocab 
@@ -25,6 +27,6 @@
   --coverage=1
 
 # If you want to get the results of the pretrained models, set two arguments in the scripts:  
-# set the MODE to evalall (i.e., MODE='evalall'). 
-# Set the CKPT_PATH to our pretrained model (e.g., CKPT_PATH="pretrained/bestmodel-xxxx").
+#    Set the MODE to evalall (i.e., MODE='evalall'). 
+#   Set the CKPT_PATH to our pretrained model (e.g., CKPT_PATH="pretrained/bestmodel-xxxx").
 
