@@ -1,6 +1,6 @@
 # 1. conda activate o
 # 2. pip install tensorflow-gpu &  run python.gpu.py
-# For expediency I reduced these down by 1/50--max_enc_steps=400 --max_dec_steps=120...NEXT TIME reduce epoch size , too.
+
 # Run A or B
 
 #A
@@ -16,6 +16,8 @@
   --min_dec_steps=100
   
 #B  
+# For expediency I reduced steps down by 1/50
+#Before reduction they were: --max_enc_steps=400 --max_dec_steps=120...NEXT TIME reduce epoch size , too.
 python run_summarization.py\
   --mode=train 
   --data_path=/home/antony/environments/n/cnn-dailymail/finished_files/chunked/val_* 
