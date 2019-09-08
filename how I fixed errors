@@ -33,3 +33,7 @@ max_enc_steps=40 max_dec_steps=10 (which is 1/10th of original size in run_summa
 # "Seq2Seq model decode error problem "Not found: Tensor name..."
 # Solved by restoring directory path with original checkpoints:
 --log_root=/home/antony/environments/n/cnn-dailymail/abstracter_model/ --exp_name=abstracter_model
+
+#from config run utils gives import error no application named utils
+#Bring the .py to root and run it. As import config  was looking for the utils folder below root, if 
+one modifies import config and keep it inside the  folder it should work.
