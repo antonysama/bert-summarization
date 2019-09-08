@@ -34,6 +34,6 @@ max_enc_steps=40 max_dec_steps=10 (which is 1/10th of original size in run_summa
 # Solved by restoring directory path with original checkpoints:
 --log_root=/home/antony/environments/n/cnn-dailymail/abstracter_model/ --exp_name=abstracter_model
 
-#from config run utils gives import error no application named utils
-#Bring the .py to root and run it. As import config  was looking for the utils folder below root, if 
-one modifies import config and keep it inside the  folder it should work.
+#In folder 'utils', running data.py gives error on line 29 'from config run utils'. Saying "no application named 
+utils." Solve by bringing data.py to the root (i.e, n2 in this case) and run it from root. But, since 'from config...' 
+looks forthe folder below root, if one modifies 'from config... ' and keep it inside the same folder it should work.
