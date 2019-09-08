@@ -5,7 +5,7 @@
   export CLASSPATH=/home/antony/environments/n/stanford-corenlp-full-2018-10-05/stanford-corenlp-3.9.2.jar
 
 # "Installation version issues: mkl-fft..."
-pip install\
+pip2 install\
     numpy \
     scipy \
     pandas \
