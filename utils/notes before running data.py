@@ -21,3 +21,7 @@ windrose==1.6.5 \
     Cython \
 tables==3.4.4 \
 pyrouge==0.1.3 \
+
+#In folder 'utils', running data.py gives error on line 29 'from config run utils'. Saying "no application named 
+utils." Solve by bringing data.py to the root (i.e, n2 in this case) and run it from root. But, since 'from config...' 
+looks forthe folder below root, if one modifies 'from config... ' and keep it inside the same folder it should work.
