@@ -105,7 +105,7 @@ noam = arg.noam
 
 ### BERT
 root_dir = os.path.expanduser("~")
-train_data_path = os.path.join(root_dir, "naver2/data")
+train_data_path = os.path.join(root_dir, "/environments/n2/bert-summarization/utils/finished_files")
 max_seq_length = arg.max_seq_length # initially was 128, but i changed to 512
 vocab_size = 30522
 
