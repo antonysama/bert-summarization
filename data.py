@@ -17,7 +17,7 @@ from pytorch_pretrained_bert.tokenization import BertTokenizer
 from pytorch_pretrained_bert.modeling import BertModel
 
 import sys
-sys.path.insert(0, 'home/antony/environments/n2/bert-summarization/utils')
+sys.path.insert(0, 'home/antony/environments/n2/bert-summarization') # where data.py file is. 
 
 # DailyMail 
 import glob
@@ -375,7 +375,7 @@ def text_input2bert_input(example, bert_tokenizer, seq_length=config.max_seq_len
 
 if __name__ == "__main__":
     # # 1. for generating the pickle files from chunked.bin data files
-    create_examples(config.train_data_path+'/chunked/*')
+    create_examples(config.train_data_path+'/chunked/*')#the rest shd be in the config file.
 
     # 2. obtain dataloaders
     # train_dl, val_dl, test_dl = get_dataloaders()
