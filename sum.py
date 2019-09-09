@@ -1,5 +1,5 @@
 # 1. conda activate o
-# 2. pip install tensorflow-gpu &  run python.gpu.py
+# 2. pip install tensorflow-gpu 
 
 # Run A or B
 
