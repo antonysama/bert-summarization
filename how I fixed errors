@@ -35,5 +35,5 @@ is 1/10th of original size in run_summaraization.py)
 --log_root=/home/antony/environments/n/cnn-dailymail/abstracter_model/ --exp_name=abstracter_model
 
 #In the 'utils' folder, running 'data.py' gives an error. Referring to ln29, 'from config import utils', saying "no 
-application named utils." Solve this by bringing 'data.py' to  root (i.e, n2 in this case) and run. Ln29 looks for a 
-folder below root. So, if one modifies data.py's 'from config...' one can keep it inside the same folder.
+application named utils." Solve this by bringing 'data.py' to  root (i.e, n2 in this case) and run. Data.py's ln29 
+looks for a folder below root. If one modifies  ln29 one can keep it inside the same folder.
