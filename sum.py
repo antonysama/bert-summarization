@@ -1,5 +1,4 @@
-# 1. conda activate o # an env with python 2.7
-# 2. pip install tensorflow-gpu 
+# Summarization by tf. 1. conda activate o # an env with python 2.7; # 2. pip install tensorflow-gpu 
 
 # Run A or B
 
