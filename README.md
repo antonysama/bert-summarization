@@ -12,10 +12,10 @@
 ### Errors I couldn't fix:
 1. See error_log pt 1 & 2 screenshots in repo above.
 
-2. Installing 'requirements.txt' gives error. "Could not find a version that satisfies the requirement mkl-fft==1.0.10 (from -r requirements.txt (line 23)) (from versions: 1.0.0.17, 1.0.2, 1.0.6) ... No matching distribution found for mkl-fft==1.0.10 (from -r requirements.txt (line 23)
+2. Installing 'requirements.txt' gives error "Could not find a version that satisfies the requirement mkl-fft==1.0.10 (from -r requirements.txt (line 23)) (from versions: 1.0.0.17, 1.0.2, 1.0.6) ... No matching distribution found for mkl-fft==1.0.10 (from -r requirements.txt (line 23)"
 
-### Errors I fixed:
-* I cahnged 'utils.data' to 'data' in : main.py ln 17;  model/transformer.py ln 7. 
-* In model/common_layer.py", ln 17 changed 'from rouge import Rouge' yo 'from pyrouge import Rouge155' 
+### Changes I made from original repo:
+* In  main.py ln 17 and in  model/transformer.py ln 7, I changed 'utils.data' to 'data' since data was brought up to root. 
+* In model/common_layer.py" ln 17, I changed 'from rouge import Rouge' to 'from pyrouge import Rouge155' since pyrouge is current.
 
 Paper: https://arxiv.org/pdf/1902.09243.pdf 
