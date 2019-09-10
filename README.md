@@ -9,11 +9,9 @@
 3. Model is too big for my GPU, so I may use smaller parameters as following for debugging purpose. 
 `CUDA_VISIBLE_DEVICES=3 python main.py --cuda --batch_size=2 --hop 4 --hidden_dim 100`
 
-### Notes to reviewer:
-* Installing 'requirements.txt' gives errors I couldn't fix #1 below. Any idea why ?
-
 ### Errors I couldn't fix:
-1. Could not find a version that satisfies the requirement mkl-fft==1.0.10 (from -r requirements.txt (line 23)) (from versions: 1.0.0.17, 1.0.2, 1.0.6) ... No matching distribution found for mkl-fft==1.0.10 (from -r requirements.txt (line 23)
+1. Installing 'requirements.txt' gives error. "Could not find a version that satisfies the requirement mkl-fft==1.0.10 (from -r requirements.txt (line 23)) (from versions: 1.0.0.17, 1.0.2, 1.0.6) ... No matching distribution found for mkl-fft==1.0.10 (from -r requirements.txt (line 23)
+
 2. See error_log pt1 & 2 screenshots above
 
 ### Errors I fixed:
