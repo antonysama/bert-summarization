@@ -17,8 +17,11 @@ Model is too big for my GPU, so I may use smaller parameters as following for de
 
 ### Notes to reviewer:
 * Installing 'requirements.txt' gives error #1. Any idea why ?
-* FYI only--in model/transformer.py ln 7, I cahnged 'utils.data' to 'data' and it got rid of an error.
 
-### Errors
+### Errors:
 1. Could not find a version that satisfies the requirement mkl-fft==1.0.10 (from -r requirements.txt (line 23)) (from versions: 1.0.0.17, 1.0.2, 1.0.6) ... No matching distribution found for mkl-fft==1.0.10 (from -r requirements.txt (line 23)
+
+### Changes made to original script:
+* In model/transformer.py ln 7, I cahnged 'utils.data' to 'data'
+* In model/common_layer.py", ln 17 changed 'from rouge import Rouge' yo 'from pyrouge import Rouge155' 
 
