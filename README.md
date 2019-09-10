@@ -12,7 +12,7 @@
 ### Errors I couldn't fix:
 1. Installing 'requirements.txt' gives error. "Could not find a version that satisfies the requirement mkl-fft==1.0.10 (from -r requirements.txt (line 23)) (from versions: 1.0.0.17, 1.0.2, 1.0.6) ... No matching distribution found for mkl-fft==1.0.10 (from -r requirements.txt (line 23)
 
-2. See error_log pt1 & 2 screenshots above
+2. See error_log pt 1 & 2 screenshots above
 
 ### Errors I fixed:
 * I cahnged 'utils.data' to 'data' in : main.py ln 17;  model/transformer.py ln 7. 
