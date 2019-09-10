@@ -16,12 +16,12 @@ Model is too big for my GPU, so I may use smaller parameters as following for de
 `CUDA_VISIBLE_DEVICES=3 python main.py --cuda --batch_size=2 --hop 4 --hidden_dim 100`
 
 ### Notes to reviewer:
-* Installing 'requirements.txt' gives error #1. Any idea why ?
+* Installing 'requirements.txt' gives errors I couldn't fix #1 below. Any idea why ?
 
-### Errors:
+### Errors I couldn't fix:
 1. Could not find a version that satisfies the requirement mkl-fft==1.0.10 (from -r requirements.txt (line 23)) (from versions: 1.0.0.17, 1.0.2, 1.0.6) ... No matching distribution found for mkl-fft==1.0.10 (from -r requirements.txt (line 23)
 
-### Changes made to original script:
+### Errors I fixed:
 * I cahnged 'utils.data' to 'data' in : main.py ln 17;  model/transformer.py ln 7. 
 * In model/common_layer.py", ln 17 changed 'from rouge import Rouge' yo 'from pyrouge import Rouge155' 
 
