@@ -16,6 +16,6 @@
 
 ### Changes I made from original repo:
 * In  main.py ln 17 and in  model/transformer.py ln 7, I changed 'utils.data' to 'data' since data was brought up to root. 
-* In model/common_layer.py" ln 17, I changed 'from rouge import Rouge' to 'from pyrouge import Rouge155' since pyrouge is current.
+* In model/common_layer.py" ln 17, I changed 'from rouge import Rouge' to 'from pyrouge import Rouge155' since pyrouge is current. Ln 578 from Rouge to Rouge 578.
 
 Paper: https://arxiv.org/pdf/1902.09243.pdf 
