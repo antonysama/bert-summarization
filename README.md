@@ -2,7 +2,7 @@
 ### Versions
 * python 2.7;PyTorch: 1.0.1.post2
 
-### Preparing package/dataset & running mode
+### Preparing packages, dataset & running 
 0. Run: conda activate p27;`then run: pip install -r requirements.txt` 
 1. Downld subset of data from: https://github.com/JafferWilson/Process-Data-of-CNN-DailyMail(first time only )
 2. Run: `python data.py` to create pickle files that will be used in my data-loader(first time only)
