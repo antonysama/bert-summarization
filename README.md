@@ -3,10 +3,10 @@
 * python 2.7;PyTorch: 1.0.1.post2
 
 ### Preparing package/dataset & running mode
-0. Run: `pip2 install -r requirements.txt` (and more_requirements.txt) to install required packages
-1. Download chunk CNN/DailyMail data from: https://github.com/JafferWilson/Process-Data-of-CNN-DailyMail --done
-2. Run: `python data.py` to create pickle file that will be used in my data-loader --done
-3. Model is too big for my GPU, so I may use smaller parameters as following for debugging purpose. 
+0. Run: conda activate p27;`then run: pip install -r requirements.txt` 
+1. Downld subset of data from: https://github.com/JafferWilson/Process-Data-of-CNN-DailyMail(first time only )
+2. Run: `python data.py` to create pickle files that will be used in my data-loader(first time only)
+3. Use smaller parameters as following for debugging purpose. 
 `CUDA_VISIBLE_DEVICES=3 python main.py --cuda --batch_size=2 --hop 4 --hidden_dim 100`
 
 ### Errors I couldn't fix:
