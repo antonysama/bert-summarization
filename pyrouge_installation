@@ -1,9 +1,10 @@
 mkdir my_pyrougue
+cd my_pyrougue
 git clone https://github.com/bheinzerling/pyrouge
 cd pyrouge
 python setup.py install --user
 git clone https://github.com/andersjo/pyrouge.git rouge
-pyrouge_set_rouge_path ~/stanford2/bert-summarization/my_pyrougue/pyrouge/rouge/tools/ROUGE-1.5.5/
+pyrouge_set_rouge_path ~/my_pyrougue/pyrouge/rouge/tools/ROUGE-1.5.5/  # make sure to get the directory right.
 cd rouge/tools/ROUGE-1.5.5/data
 rm WordNet-2.0.exc.db
 ./WordNet-2.0-Exceptions/buildExeptionDB.pl ./WordNet-2.0-Exceptions ./smart_common_words.txt ./WordNet-2.0.exc.db
