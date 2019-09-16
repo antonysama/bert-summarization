@@ -1,7 +1,7 @@
+mkdir tutorial_pyrougue
 git clone https://github.com/bheinzerling/pyrouge
 cd pyrouge
 python setup.py install --user
-
 git clone https://github.com/andersjo/pyrouge.git rouge
 pyrouge_set_rouge_path ~/tutorial_pyrougue/pyrouge/rouge/tools/ROUGE-1.5.5/
 cd rouge/tools/ROUGE-1.5.5/data
