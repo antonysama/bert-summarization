@@ -4,7 +4,7 @@ import torch.nn.functional as F
 
 import numpy as np
 import math
-from utils.data import text_input2bert_input
+from data import text_input2bert_input #used to be utils.data
 from model.common_layer import EncoderLayer, DecoderLayer, MultiHeadAttention, Conv, PositionwiseFeedForward, LayerNorm , _gen_bias_mask ,_gen_timing_signal, LabelSmoothing, NoamOpt, _get_attn_subsequent_mask,  get_input_from_batch, get_output_from_batch
 from utils import config
 import random
@@ -78,6 +78,9 @@ class Decoder(nn.Module):
     def forward(self, inputs, encoder_output, mask):
         mask_src, mask_trg = mask
         if mask_trg is not None:
+            mask_trg = mask_trg.type(torch.DoubleTensor)
+    	    self.mask = self.mask.type(torch.DoubleTensor)
+	        #import pdb; pdb.set_trace()
             dec_mask = torch.gt(mask_trg + self.mask[:, :mask_trg.size(-1), :mask_trg.size(-1)], 0)
         else:
             dec_mask = None
