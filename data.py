@@ -17,7 +17,7 @@ from pytorch_pretrained_bert.tokenization import BertTokenizer
 from pytorch_pretrained_bert.modeling import BertModel
 
 import sys
-sys.path.insert(0, 'home/antony/environments/n2/bert-summarization') # where data.py file is. 
+sys.path.insert(0, '/home/antony/stanford2/bert-summarization') # where data.py file is. 
 
 # DailyMail 
 import glob
@@ -130,7 +130,8 @@ def create_examples(data_path):
                 unique_id += 1
         
         for k in articles:
-            print("Saving full datafiles")
+            print("Saving full datafiles")	
+            print(config.train_data_path)
             with open('{}/articles_{}.pickle'.format(config.train_data_path, k), 'wb') as handle:
                 pickle.dump(articles[k], handle, protocol=pickle.HIGHEST_PROTOCOL)
             with open('{}/summaries_{}.pickle'.format(config.train_data_path, k), 'wb') as handle:
