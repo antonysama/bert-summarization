@@ -9,7 +9,7 @@
 3. Use smaller parameters as following for debugging purpose. 
 `CUDA_VISIBLE_DEVICES=3 python main.py --cuda --batch_size=2 --hop 4 --hidden_dim 100`
 
-### Errors I couldn't fix:
+### The error I couldn't fix:
 . There are two data loaders: website of news article and the related article's corpus of text (from JafferWilson above). When I try to load data that is outside the above dataset I get "collecttios must contain at least one sentance."
 
 ### Changes I made from original repo:
