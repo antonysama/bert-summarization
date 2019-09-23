@@ -10,7 +10,7 @@
 `CUDA_VISIBLE_DEVICES=3 python main.py --cuda --batch_size=2 --hop 4 --hidden_dim 100`
 
 ### Errors I couldn't fix:
-. Installing 'requirements.txt' gives error "Could not find a version that satisfies the requirement mkl-fft==1.0.10 (from -r requirements.txt (line 23)) (from versions: 1.0.0.17, 1.0.2, 1.0.6) ... No matching distribution found for mkl-fft==1.0.10 (from -r requirements.txt (line 23)"
+. There are two data loaders: website and the related corpus of text. When I provide load data that is outside the dataset in the repo I get "collecttios must contain at least one sentance."
 
 ### Changes I made from original repo:
 * In  main.py ln 17 and in  model/transformer.py ln 7, I changed 'utils.data' to 'data' since data was brought up to root. 
