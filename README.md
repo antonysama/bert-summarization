@@ -10,7 +10,7 @@
 `CUDA_VISIBLE_DEVICES=3 python main.py --cuda --batch_size=2 --hop 4 --hidden_dim 100`
 
 ### Errors I couldn't fix:
-. There are two data loaders: website and the related corpus of text. When I provide load data that is outside the dataset in the repo I get "collecttios must contain at least one sentance."
+. There are two data loaders: website of news article and the related article's corpus of text (from JafferWilson above). When I try to load data that is outside the above dataset I get "collecttios must contain at least one sentance."
 
 ### Changes I made from original repo:
 * In  main.py ln 17 and in  model/transformer.py ln 7, I changed 'utils.data' to 'data' since data was brought up to root. 
